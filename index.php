@@ -37,7 +37,7 @@ $result = $conn->query($sql);
                         </div>
                     <?php endwhile; ?>
                 <?php else: ?>
-                    <<!-- Jika tidak ada data changelog, tampilkan pesan kosong -->
+                <!--ajfbafbb--
                     <div class="alert alert-info text-center">Belum ada pembaruan (changelog kosong).</div>
                 <?php endif; ?>
             </div>
