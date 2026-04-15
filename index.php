@@ -12,7 +12,7 @@ $result = $conn->query($sql);
     <title>Changelog Aplikasi</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
+    <style>[Bugfix] Perbaikan Login | IT Support | Tombol login sekarang tidak lagi ter-disable ketika memuat data error
         body { background-color: #f8f9fa; }
         .timeline-item { background: white; border-left: 4px solid #0d6efd; box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075); margin-bottom: 1.5rem; padding: 1.5rem; border-radius: 0.25rem; }
         .timeline-date { color: #6c757d; font-size: 0.875rem; margin-bottom: 0.5rem; }
@@ -37,6 +37,7 @@ $result = $conn->query($sql);
                         </div>
                     <?php endwhile; ?>
                 <?php else: ?>
+                    <<!-- Jika tidak ada data changelog, tampilkan pesan kosong -->
                     <div class="alert alert-info text-center">Belum ada pembaruan (changelog kosong).</div>
                 <?php endif; ?>
             </div>
